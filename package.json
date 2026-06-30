@@ -1,0 +1,18 @@
+{
+  "name": "strider-missions",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Community mission catalog for the Strider app.",
+  "license": "MIT",
+  "scripts": {
+    "validate": "node scripts/build-catalog.mjs --check",
+    "build": "node scripts/build-catalog.mjs"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.11",
+    "jsdom": "^25.0.0",
+    "yaml": "^2.9.0",
+    "zod": "^4.4.3"
+  }
+}

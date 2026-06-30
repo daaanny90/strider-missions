@@ -1,0 +1,43 @@
+id: sentiero-degli-dei
+title: "Il Sentiero degli Dei"
+subtitle: "Bomerano → Nocelle"
+protagonists: [Camminatore]
+unit: km
+map:
+  image: maps/sentiero-degli-dei.svg
+  pathId: dei-route
+legs:
+  - id: bomerano-colle-serra
+    from: Bomerano
+    to: Colle della Serra
+    distanceKm: 1.5
+    waypoints:
+      - id: colle-serra
+        at: 1.5
+        name: Colle della Serra
+        lore: "Lasciate Bomerano e salite al colle; davanti a voi il sentiero si apre sospeso tra cielo e mare."
+        unlock: { type: card, id: colle-serra }
+  - id: colle-serra-grotta-biscotto
+    from: Colle della Serra
+    to: Grotta del Biscotto
+    distanceKm: 3
+    waypoints:
+      - id: grotta-biscotto
+        at: 3
+        name: Grotta del Biscotto
+        lore: "Passate sotto la grande parete strapiombante, scavata di antiche dimore rupestri."
+        unlock: { type: card, id: grotta-biscotto }
+    passages:
+      - at: 1.5
+        name: "I terrazzamenti"
+        text: "Camminate tra muretti a secco e pergolati; in basso Positano luccica sul mare."
+  - id: grotta-biscotto-nocelle
+    from: Grotta del Biscotto
+    to: Nocelle
+    distanceKm: 3.5
+    waypoints:
+      - id: nocelle
+        at: 3.5
+        name: Nocelle
+        lore: "Raggiungete il borgo aggrappato alla roccia; da qui millecinquecento gradini scendono verso Positano."
+        unlock: { type: card, id: nocelle }
