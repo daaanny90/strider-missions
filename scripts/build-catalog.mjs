@@ -112,6 +112,8 @@ for (const { id, mission, clean } of entries) {
     id,
     title: mission.title,
     subtitle: mission.subtitle,
+    kind: mission.kind,
+    description: mission.description,
     distanceKm: Math.round(mission.legs.reduce((s, l) => s + l.distanceKm, 0)),
     legs: mission.legs.length,
     waypoints: mission.legs.reduce((s, l) => s + l.waypoints.length, 0),

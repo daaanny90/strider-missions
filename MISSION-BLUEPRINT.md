@@ -70,6 +70,8 @@ Every field below; the file is validated on load and **rejected** if malformed.
 id: camino-frances              # unique slug; matches the filename
 title: "Il Cammino di Santiago" # shown as the journey title
 subtitle: "Saint-Jean → Santiago de Compostela"  # optional
+kind: real                      # optional but recommended: "real" (a real-world route) or "fiction" (book/imagined). Shows a badge.
+description: "Il celebre pellegrinaggio…"  # optional: 1–2 sentence blurb shown in the picker/catalog BEFORE selecting
 protagonists: [Pellegrino]      # ≥ 1 names (the traveller / characters)
 unit: km                        # literal, always "km"
 map:

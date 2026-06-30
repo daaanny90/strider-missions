@@ -58,6 +58,8 @@ export const missionSchema = z.object({
   id: z.string().min(1),
   title: z.string().min(1),
   subtitle: z.string().optional(),
+  kind: z.enum(['real', 'fiction']).optional(),
+  description: z.string().optional(),
   protagonists: z.array(z.string().min(1)).min(1),
   unit: z.literal('km'),
   map: mapSchema,

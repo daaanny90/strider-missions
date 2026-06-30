@@ -1,6 +1,8 @@
 id: sentiero-degli-dei
 title: "Il Sentiero degli Dei"
 subtitle: "Bomerano → Nocelle"
+kind: real
+description: "Il celebre sentiero a picco sul mare della Costiera Amalfitana, tra terrazzamenti e cielo."
 protagonists: [Camminatore]
 unit: km
 map:
